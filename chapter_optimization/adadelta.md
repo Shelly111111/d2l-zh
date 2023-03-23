@@ -144,7 +144,7 @@ d2l.train_ch11(adadelta, init_adadelta_states(feature_dim),
                {'rho': 0.9}, data_iter, feature_dim);
 ```
 
-为了简洁实现，我们只需使用`Trainer`类中的`adadelta`算法。
+为了简洁实现，我们只需使用高级API中的Adadelta算法。
 
 ```{.python .input}
 d2l.train_concise_ch11('adadelta', {'rho': 0.9}, data_iter)
@@ -193,4 +193,8 @@ d2l.train_concise_ch11(trainer, {'rho': 0.9}, data_iter)
 
 :begin_tab:`tensorflow`
 [Discussions](https://discuss.d2l.ai/t/5773)
+:end_tab:
+
+:begin_tab:`paddle`
+[Discussions](https://discuss.d2l.ai/t/11854)
 :end_tab:
